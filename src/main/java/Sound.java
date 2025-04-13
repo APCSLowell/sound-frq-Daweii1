@@ -27,10 +27,10 @@ public class Sound
         count++;
       }
     
+
+  }
     return count;
   }
-
-
 
   /** Removes all silence from the beginning of this sound.
    *  Silence is represented by a value of 0.
@@ -43,7 +43,7 @@ public class Sound
     while(samples[i] == 0) {
       i++;
     }
-    int []boom = new int [samples-i];
+    int []boom = new int [samples.length-i];
 
     for(int j = 0; j<boom.length; i++) {
     boom[j] = samples[i+j];
